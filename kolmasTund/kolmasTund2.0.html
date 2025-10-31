@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ülesanne: Pildiformaadid</title>
-    <link rel="icon" href="smile.png" type="image/x-icon" />
-    <link rel="icon" href="smile2.svg" type="image/x-icon" />
-    <link rel="icon" href="smile1.jpg" type="image/x-icon" />
+    <link rel="icon" href="images/smile.png" type="image/x-icon" />
+    <link rel="icon" href="images/smile2.svg" type="image/x-icon" />
+    <link rel="icon" href="images/smile1.jpg" type="image/x-icon" />
     <style>
         body { font-family: Arial, sans-serif; margin: 40px; background: #f4f4f4; color: #222; }
         h1 { font-size: 24px; }
@@ -16,6 +16,13 @@
         .card img { max-width: 100%; height: auto; display: block; margin-bottom: 10px; border: 1px solid #ccc; }
         .meta { font-size: 14px; color: #555; }
         a { color: #0066cc; }
+        button{
+            position: fixed;
+            bottom: 20px;
+            padding: 10px 15px;
+        }
+        .button1 { right: 20px; }
+        .button2 { left: 20px; }
     </style>
 
 
@@ -71,34 +78,37 @@
 <div class="container">
     <div class="card">
         <h3>SVG</h3>
-        <img src="smile2.svg" alt="SVG versioon">
+        <img src="images/smile2.svg" alt="SVG versioon">
         <p class="meta">Faili suurus: 1.24 KB</p>
     </div>
 
     <div class="card">
         <h3>WebP</h3>
-        <img src="frame_1x.webp" alt="WebP versioon">
+        <img src="images/frame_1x.webp" alt="WebP versioon">
         <p class="meta">Faili suurus: 8.28 KB</p>
     </div>
 
     <div class="card">
         <h3>PNG (mitte läbipaistev)</h3>
-        <img src="smiletaust.png" alt="PNG mitte läbipaistev versioon">
+        <img src="images/smiletaust.png" alt="PNG mitte läbipaistev versioon">
         <p class="meta">Faili suurus: 9.36 KB)</p>
     </div>
 
     <div class="card">
         <h3>PNG (läbipaistev)</h3>
-        <img src="smile.png" alt="PNG läbipaistev versioon">
+        <img src="images/smile.png" alt="PNG läbipaistev versioon">
         <p class="meta">Faili suurus: 9.67 KB</p>
     </div>
 
     <div class="card">
         <h3>JPG</h3>
-        <img src="smile1.jpg" alt="JPG versioon">
+        <img src="images/smile1.jpg" alt="JPG versioon">
         <p class="meta">Faili suurus: 44.4 KB</p>
     </div>
+
 </div>
+<button onclick="location.href='/tund4'" class="button1">Järgmine tund</button>
+<button onclick="location.href='/tund2'" class="button2">Eelmine tund</button>
 </body>
 </html>
 
