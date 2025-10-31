@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luiq</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Roboto ', sans-serif;
+        }
+        button{
+            position: fixed;
+            bottom: 20px;
+            padding: 10px 15px;
+        }
+        .button1 { right: 20px; }
+        .button2 { left: 20px; }
+        .container {
+            display: flex;
+            gap: 20px;
+            width: 756px;
+            height: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .card {
+            flex: 1;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .card.popular {
+            border-color: #000;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        .badge.cheapest {
+            background: #eaf3ff;
+            color: #000;
+        }
+
+        .badge.popular {
+            background: #eafce7;
+            color: #2b7a0b;
+        }
+
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .price small {
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 14px;
+        }
+
+        .description {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .guarantee {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div>
+            <span class="badge cheapest">KÕIGE SOODSAM</span>
+            <h2>STARTER</h2>
+            <p>esimene aasta <span style="border:1px solid #ccc; padding:2px 6px; border-radius:12px;">-50%</span></p>
+            <p class="price">3,67 €+KM<small>/kuu</small></p>
+            <p class="old-price">norm. 7,34 €+KM</p>
+            <ul>
+                <li>16 GB</li>
+                <li>Privaatne postkast</li>
+                <li class="disabled">Oma IP aadress</li>
+            </ul>
+            <p class="description">
+                See paket sobib hästi kui alustad oma esimese kodulehe tegemist ning soovid ennast internetis nähtavaks teha.
+            </p>
+        </div>
+        <div>
+            <a href="">Telli</a>
+            <p class="guarantee">30-päevane raha tagasi garantii<br>Kehtib ainult veebimajutuse baaspaketile</p>
+        </div>
+    </div>
+    <div class="card popular">
+        <div>
+            <span class="badge popular">👍 KÕIGE POPULAARSEM</span>
+            <h2>BUSINESS</h2>
+            <p>esimene aasta <span style="border:1px solid #ccc; padding:2px 6px; border-radius:12px;">-50%</span></p>
+            <p class="price">6,47 €+KM<small>/kuu</small></p>
+            <p class="old-price">norm. 12,94 €+KM</p>
+            <ul>
+                <li>24 GB</li>
+                <li>Privaatne postkast</li>
+                <li>Oma IP aadress</li>
+            </ul>
+            <p class="description">
+                Kindel valik kasvava e-äri püstihoidmiseks, suurem maht veebile ja e-postile ning rohkem samaaegseid veebikülastajaid.
+            </p>
+        </div>
+        <div>
+            <a href="">Telli</a>
+            <p class="guarantee">30-päevane raha tagasi garantii<br>Kehtib ainult veebimajutuse baaspaketile</p>
+        </div>
+    </div>
+</div>
+</div>
+<button onclick="location.href='/tund3'" class="button1">Järgmine tund</button>
+<button onclick="location.href='/'" class="button2">Eelmine tund</button>
+</body>
+</html>

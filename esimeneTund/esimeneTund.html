@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luiq</title>
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <style>
+        img{
+            transition: .3s;
+        }
+        img:hover{
+            fill: aquamarine;
+            margin-top: 50px;
+        }
+        svg:hover circle{
+            fill: green;
+        }
+        button{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 15px
+        }
+    </style>
+</head>
+<body>
+<h>Tere tulemast!</h>
+<figure>
+    <img src="favicon.svg" alt="Minu Favicon">
+    <figcaption>Minu favicon</figcaption>
+</figure>
+<svg viewBox="0 0 100 100" width="50" height="50">
+    <circle cx="50" cy="50" r="40" fill="blue" />
+</svg>
+<button onclick="location.href='/tund2'">Järgmine tund</button>
+</body>
+</html>
