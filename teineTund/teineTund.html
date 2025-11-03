@@ -15,9 +15,16 @@
             position: fixed;
             bottom: 20px;
             padding: 10px 15px;
+            border: none;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            transition: transform .12s ease, box-shadow .12s ease, background .2s;
         }
-        .button1 { right: 20px; }
         .button2 { left: 20px; }
+        .button1 { right: 20px; }
         .container {
             display: flex;
             gap: 20px;
@@ -135,6 +142,6 @@
 </div>
 </div>
 <button onclick="location.href='/tund3'" class="button1">Järgmine tund</button>
-<button onclick="location.href='/'" class="button2">Eelmine tund</button>
+<button onclick="location.href='/'" class="button2">Tagasi</button>
 </body>
 </html>

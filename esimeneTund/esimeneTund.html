@@ -21,9 +21,19 @@
         button{
             position: fixed;
             bottom: 20px;
-            right: 20px;
-            padding: 10px 15px
+            padding: 10px 15px;
+            border: none;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            color: var(--bg);
+            background: var(--btn);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            transition: transform .12s ease, box-shadow .12s ease, background .2s;
         }
+        .button2 { left: 20px; }
+        .button1 { right: 20px; }
     </style>
 </head>
 <body>
@@ -35,6 +45,7 @@
 <svg viewBox="0 0 100 100" width="50" height="50">
     <circle cx="50" cy="50" r="40" fill="blue" />
 </svg>
-<button onclick="location.href='/tund2'">Järgmine tund</button>
+<button onclick="location.href='/tund2'" class="button1">Järgmine tund</button>
+<button onclick="location.href='/'" class="button2">Tagasi</button>
 </body>
 </html>

@@ -112,6 +112,32 @@
             color: #ffffff;
             font-size: 15px;
         }
+        .button2 {
+            left: 20px;
+            position: fixed;
+            bottom: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            transition: transform .12s ease, box-shadow .12s ease, background .2s;
+        }
+        .button1 {
+            right: 20px;
+            position: fixed;
+            bottom: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            transition: transform .12s ease, box-shadow .12s ease, background .2s;
+        }
 
         .section {
             text-align: center;
@@ -289,12 +315,14 @@
         <p>
             Building is better together — we’re looking for founders to create alongside our team. If that’s you, we’d love to talk.
         </p>
-        <button class="primary" onclick="location.href='/tund5'">Järgmine Tund</button>
+        <button class="primary">Mingi tekst</button>
     </div>
 </div>
 
 <footer>
     © 2025 High Alpha. All rights reserved.
+    <button onclick="location.href='/tund5'" class="button1">Järgmine tund</button>
+    <button onclick="location.href='/'" class="button2">Tagasi</button>
 </footer>
 </body>
 </html>

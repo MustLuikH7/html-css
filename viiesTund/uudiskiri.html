@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uudiskiri</title>
+    <style>
+        button{
+            position: fixed;
+            bottom: 20px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 7px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+            transition: transform .12s ease, box-shadow .12s ease, background .2s;
+        }
+        .button2 { left: 20px; }
+        .button1 { right: 20px; }
+    </style>
 </head>
+
 <body style="margin:0; padding:0; background-color:#f2f2f2; font-family:Arial, Helvetica, sans-serif; color:#000;">
 
 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#f2f2f2; padding:40px 0;">
@@ -86,6 +103,7 @@
         </td>
     </tr>
 </table>
-
+<button onclick="location.href='/tund6'" class="button1">Järgmine tund</button>
+<button onclick="location.href='/'" class="button2">Tagasi</button>
 </body>
 </html>
